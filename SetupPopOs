@@ -12,7 +12,7 @@
 #Created:
 #   Fri 02 August 2024, 04:18:40 PM [GMT+1]
 #Modified:
-#   Fri 02 August 2024, 04:22:22 PM [GMT+1]
+#   Fri 02 August 2024, 06:50:44 PM [GMT+1]
 #
 #Description:
 #   Setup Github PopOS DotFiles
@@ -30,4 +30,5 @@ cp ~/.dotfiles/.bashrc ~/.bashrc
 # Repeat for other dotfiles...
 
 # Source the new bashrc
-source ~/.bashrc
+# shellcheck source=/dev/null
+source "$HOME/.bashrc"
