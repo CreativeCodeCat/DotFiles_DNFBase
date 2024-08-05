@@ -1,6 +1,6 @@
-# DotFiles_PopOS
+# DotFiles_APTBase
 function dotfiles
-    /usr/bin/git --git-dir=$HOME/.DotFiles_PopOS/ --work-tree=$HOME $argv
+    /usr/bin/git --git-dir=$HOME/.DotFiles_APTBase/ --work-tree=$HOME $argv
 end
 
 
