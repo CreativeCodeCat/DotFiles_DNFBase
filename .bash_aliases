@@ -21,4 +21,4 @@
 #   bash
 #
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.DotFiles_PopOS/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.DotFiles_APTBase/ --work-tree=$HOME'
