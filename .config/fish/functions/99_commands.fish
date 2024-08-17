@@ -19,6 +19,12 @@ function setperm
     command sudo chown $USER:$USER $argv
 end
 
+# Fixed bluetooth
+function fixbt
+    command sudo rmmod btusb
+    command sudo modprobe btusb 
+end
+
 # Clear command
 function clear
     command reset && fastfetch
