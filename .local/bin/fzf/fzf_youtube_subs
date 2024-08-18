@@ -35,7 +35,7 @@ fzf_menu() {
 : "${SUBS_MENU_PROG:=fzf_menu}"
 : "${SUBS:=${HOME}/.cache/subs}"
 : "${SUBS_LINKS:=$SUBS/links}"
-: "${SUBS_OPEN:=$(repo-exec videoplayer)}"
+: "${SUBS_OPEN:=$(gobble videoplayer)}"
 : "${SUBS_CACHE:=$SUBS/cache}"
 : "${SUBS_SLEEP_VALUE:=0.05}" # raise this if you experience problems
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

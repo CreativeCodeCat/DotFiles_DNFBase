@@ -24,4 +24,4 @@
 
 programs=$(compgen -c | sort -u | tail -n +9)
 cmd=$(echo -e "$programs" | fzf --prompt="Run Program: " --border=rounded --margin=1% --color=dark --height 100% --reverse --header="   PROGRAM MENU " --info=hidden --header-first)
-exec devour $cmd
+exec gobble $cmd
