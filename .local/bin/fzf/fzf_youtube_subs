@@ -35,7 +35,7 @@ fzf_menu() {
 : "${SUBS_MENU_PROG:=fzf_menu}"
 : "${SUBS:=${HOME}/.cache/subs}"
 : "${SUBS_LINKS:=$SUBS/links}"
-: "${SUBS_OPEN:=$(gobble videoplayer)}"
+: "${SUBS_OPEN:=mpv}"
 : "${SUBS_CACHE:=$SUBS/cache}"
 : "${SUBS_SLEEP_VALUE:=0.05}" # raise this if you experience problems
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -225,7 +225,7 @@ get_sel() {
         printf 'playing: %s\n' "$url"
         # Play the selection.
         # shellcheck disable=2086
-        exec devour $SUBS_OPEN "$url"
+        $SUBS_OPEN "$url" &
       fi
       break
       ;;
