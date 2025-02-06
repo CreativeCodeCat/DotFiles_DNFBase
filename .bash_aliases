@@ -12,7 +12,7 @@
 #Created:
 #   Fri 02 August 2024, 06:52:37 PM [GMT+1]
 #Modified:
-#   Fri 02 August 2024, 07:17:55 PM [GMT+1]
+#   Thu 06 February 2025, 06:35:57 PM [GMT]
 #
 #Description:
 #   Bash Alias
@@ -21,4 +21,4 @@
 #   bash
 #
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.DotFiles_APTBase/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
