@@ -3,8 +3,10 @@ function dotfiles
     /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $argv
 end
 
-function lazygit
-    dotfiles commit -a -m "$argv"
+function dotfiles_cp 
+    # Run the commit and push commands
+    dotfiles add -u .
+    dotfiles commit -a 
     dotfiles push
 end
 
