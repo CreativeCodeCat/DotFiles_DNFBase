@@ -1,6 +1,11 @@
 # DotFiles_APTBase
 function dotfiles
-    /usr/bin/git --git-dir=$HOME/.DotFiles_APTBase/ --work-tree=$HOME $argv
+    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $argv
+end
+
+function lazygit
+    dotfiles commit -a -m "$argv"
+    dotfiles push
 end
 
 
