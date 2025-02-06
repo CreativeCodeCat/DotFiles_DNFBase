@@ -3,10 +3,10 @@ function dotfiles
     /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $argv
 end
 
-function dotfiles_cp 
+function dotfiles_cp
     # Run the commit and push commands
     dotfiles add -u .
-    dotfiles commit -a 
+    dotfiles commit -a
     dotfiles push
 end
 
@@ -26,10 +26,14 @@ function setperm
     command sudo chown $USER:$USER $argv
 end
 
+function clearrecent
+    command rm -r ~/.local/share/recently-used.xbel
+end
+
 # Fixed bluetooth
 function fixbt
     command sudo rmmod btusb
-    command sudo modprobe btusb 
+    command sudo modprobe btusb
 end
 
 # Clear command
