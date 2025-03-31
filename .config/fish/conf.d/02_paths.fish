@@ -20,6 +20,18 @@ if test -d "$HOME/.cargo/bin"
     set PATH "$HOME/.cargo/bin:$PATH"
 end
 
+# Adds `~/.local/bin/aseprite` to $PATH
+# set PATH so it includes user's private bin if it exists
+if test -d "$HOME/.local/bin/aseprite"
+    set PATH "$HOME/.local/bin/aseprite:$PATH"
+end
+
+# Adds `~/.local/bin/godot` to $PATH
+# set PATH so it includes user's private bin if it exists
+if test -d "$HOME/.local/bin/godot"
+    set PATH "$HOME/.local/bin/godot:$PATH"
+end
+
 # Adds `~/.local/bin/flexiflow_bar` to $PATH
 # set PATH so it includes user's private bin if it exists
 if test -d "$HOME/.local/bin/flexiflow_bar"

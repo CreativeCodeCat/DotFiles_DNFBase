@@ -1,2 +1,7 @@
 [MIME Cache]
-text/x-java=android-studio.desktop;
+application/json=code (another copy).desktop;
+application/x-code-workspace=code (another copy).desktop;
+text/plain=code (another copy).desktop;
+text/x-java=Android Studio.desktop;
+x-scheme-handler/steam=steam.desktop;
+x-scheme-handler/steamlink=steam.desktop;
