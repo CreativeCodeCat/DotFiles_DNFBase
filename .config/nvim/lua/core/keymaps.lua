@@ -6,7 +6,7 @@
 --   Git: https://github.com/CreativeCodeCat                                  --
 --                                                                            --
 --   Created: 31 Mar 2025, 07:16:19 pm by CreativeCodeCat                     --
---   Updated: 31 Mar 2025, 08:01:26 pm by CreativeCodeCat                     --
+--   Updated: 31 Mar 2025, 08:34:35 pm by CreativeCodeCat                     --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -45,10 +45,10 @@ vim.keymap.set("n", "n", "nzzzv", opts)
 vim.keymap.set("n", "N", "Nzzzv", opts)
 
 -- Resize with arrows
-vim.keymap.set("n", "<Up>", ":resize -2<CR>", opts)
-vim.keymap.set("n", "<Down>", ":resize +2<CR>", opts)
-vim.keymap.set("n", "<Left>", ":vertical resize -2<CR>", opts)
-vim.keymap.set("n", "<Right>", ":vertical resize +2<CR>", opts)
+vim.keymap.set("n", "h", ":resize -2<CR>", opts)
+vim.keymap.set("n", "j", ":resize +2<CR>", opts)
+vim.keymap.set("n", "k", ":vertical resize -2<CR>", opts)
+vim.keymap.set("n", "l", ":vertical resize +2<CR>", opts)
 
 -- Buffers
 vim.keymap.set("n", "<Tab>", ":bnext<CR>", opts)
@@ -105,51 +105,3 @@ vim.keymap.set(
         desc = "Open diagnostics list",
     }
 )
-
-if vim.fn.has("clipboard") == 1 then
-    -- CTRL-X and SHIFT-Del are Cut
-    vim.api.nvim_set_keymap(
-        "v", "<C-X>", "\"+x", {
-            noremap = true,
-        }
-    )
-    vim.api.nvim_set_keymap(
-        "v", "<S-Del>", "\"+x", {
-            noremap = true,
-        }
-    )
-
-    -- CTRL-C and CTRL-Insert are Copy
-    vim.api.nvim_set_keymap(
-        "v", "<C-C>", "\"+y", {
-            noremap = true,
-        }
-    )
-    vim.api.nvim_set_keymap(
-        "v", "<C-Insert>", "\"+y", {
-            noremap = true,
-        }
-    )
-
-    -- CTRL-V and SHIFT-Insert are Paste
-    vim.api.nvim_set_keymap(
-        "n", "<C-V>", "\"+gP", {
-            noremap = true,
-        }
-    )
-    vim.api.nvim_set_keymap(
-        "n", "<S-Insert>", "\"+gP", {
-            noremap = true,
-        }
-    )
-    vim.api.nvim_set_keymap(
-        "c", "<C-V>", "<C-R>+", {
-            noremap = true,
-        }
-    )
-    vim.api.nvim_set_keymap(
-        "c", "<S-Insert>", "<C-R>+", {
-            noremap = true,
-        }
-    )
-end

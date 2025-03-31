@@ -6,12 +6,11 @@
 --   Git: https://github.com/CreativeCodeCat                                  --
 --                                                                            --
 --   Created: 26 Jan 2022, 06:02:53 pm by CreativeCodeCat                     --
---   Updated: 31 Mar 2025, 08:01:30 pm by CreativeCodeCat                     --
+--   Updated: 31 Mar 2025, 08:14:36 pm by CreativeCodeCat                     --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 -- Version=2024.03.31
 -- Bail out if this isn't wanted.
-
 if vim.g.skip_loading_mswin then
     return
 end
@@ -129,13 +128,6 @@ if vim.fn.has("clipboard") == 1 then
         }
     ) -- Paste in Visual mode
 end
-
--- CTRL-Q to behave like old CTRL-V
-vim.api.nvim_set_keymap(
-    "", "<C-Q>", "<C-V>", {
-        noremap = true,
-    }
-)
 
 -- CTRL-S for saving
 vim.api.nvim_set_keymap(
