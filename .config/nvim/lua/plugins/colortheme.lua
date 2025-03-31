@@ -6,7 +6,7 @@
 --   Git: https://github.com/CreativeCodeCat                                  --
 --                                                                            --
 --   Created: 31 Mar 2025, 07:17:51 pm by CreativeCodeCat                     --
---   Updated: 31 Mar 2025, 08:01:02 pm by CreativeCodeCat                     --
+--   Updated: 31 Mar 2025, 08:50:42 pm by CreativeCodeCat                     --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -18,7 +18,7 @@ return {
         -- Example config in lua
         vim.g.nord_contrast = true
         vim.g.nord_borders = false
-        vim.g.nord_disable_background = false
+        vim.g.nord_disable_background = true
         vim.g.nord_italic = false
         vim.g.nord_uniform_diff_background = true
         vim.g.nord_bold = false

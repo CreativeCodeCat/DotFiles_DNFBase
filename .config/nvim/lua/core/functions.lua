@@ -6,7 +6,7 @@
 --   Git: https://github.com/CreativeCodeCat                                  --
 --                                                                            --
 --   Created: 31 Mar 2025, 07:16:04 pm by CreativeCodeCat                     --
---   Updated: 31 Mar 2025, 08:01:24 pm by CreativeCodeCat                     --
+--   Updated: 31 Mar 2025, 08:50:04 pm by CreativeCodeCat                     --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -46,7 +46,7 @@ M.edit_config = function()
         "2. alpha.lua",
         "3. autocompletion.lua",
         "4. bufferline.lua",
-        "5. colorscheme.lua",
+        "5. colortheme.lua",
         "6. comment.lua",
         "7. gitsigns.lua",
         "8. header.lua",
@@ -87,7 +87,7 @@ M.edit_config = function()
             "%s%sbufferline.lua", M.nvim_config_plugins_root, M.sep
         ),
         [5] = string.format(
-            "%s%scolorscheme.lua", M.nvim_config_plugins_root, M.sep
+            "%s%scolortheme.lua", M.nvim_config_plugins_root, M.sep
         ),
         [6] = string.format("%s%scomment.lua", M.nvim_config_plugins_root, M.sep),
         [7] = string.format(
