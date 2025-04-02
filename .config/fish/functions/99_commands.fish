@@ -4,6 +4,7 @@ function dotfiles
 end
 
 function dotfiles_cp
+    dotfiles pull
     # Run the commit and push commands
     dotfiles add -u .
     dotfiles commit -a
