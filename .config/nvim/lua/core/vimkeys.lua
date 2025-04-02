@@ -21,7 +21,7 @@ local save_cpo = vim.o.cpoptions
 vim.cmd("set cpo&vim")
 
 -- Enable Windows-like behavior
-vim.cmd("behave mswin")
+vim.cmd("runtime mswin.vim")
 
 vim.o.backspace = "indent,eol,start"
 vim.o.whichwrap = vim.o.whichwrap .. "<,>,[,]"

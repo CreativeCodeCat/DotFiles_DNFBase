@@ -68,5 +68,11 @@ if test -d "$HOME/.local/bin/clipmenu"
     set PATH "$HOME/.local/bin/clipmenu:$PATH"
 end
 
+# Adds `~/.dotnet` to $PATH
+# set PATH so it includes user's private bin if it exists
+if test -d "$HOME/.dotnet"
+    set PATH "$HOME/.dotnet:$PATH"
+end
+
 # Remove duplicates from PATH
 set -gx PATH (string split ':' -- $PATH | sort | uniq | string join ':')

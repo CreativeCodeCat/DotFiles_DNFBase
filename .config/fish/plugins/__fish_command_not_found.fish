@@ -39,16 +39,16 @@ if $_cnf_noupdate
     end
 else
     function _cnf_need_to_update_files
-        return 0 # No need to update files for apt
+        return 0 # No need to update files for dnf
     end
 end
 
 function _cnf_command_packages
     set cmd $argv[1]
     if _cnf_need_to_update_files
-        _cnf_asroot apt update >&2
+        _cnf_asroot dnf update >&2
     end
-    apt-cache search --names-only $cmd | awk '{print $1}' | sort -u
+    dnf search $cmd | awk '{print $1}' | grep "^$cmd" | sort -u
 end
 
 function _cnf_package_files
@@ -93,7 +93,7 @@ function fish_command_not_found
             _cnf_cmd_not_found $cmd
         case 1
             _cnf_print "fish: \"$cmd\" may be found in package: $packages"
-            _cnf_print "sudo nala install $packages"
+            _cnf_print "sudo apt install $packages"
         case '*'
             _cnf_print "fish: \"$cmd\" may be found in the following packages:"
             for package in $packages
