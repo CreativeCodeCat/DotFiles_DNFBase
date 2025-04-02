@@ -11,7 +11,7 @@ To clone and manage your dotfiles using a bare Git repository, follow these step
 Clone the repository into a `dotfiles` directory in your home directory:
 
 ```sh
-git clone --bare git@github.com:CreativeCodeCat/DotFiles_APTBase.git $HOME/.dotfiles
+git clone --bare git@github.com:CreativeCodeCat/DotFiles_PKGBase.git $HOME/.dotfiles
 ```
 
 ### 2. Define an Alias
