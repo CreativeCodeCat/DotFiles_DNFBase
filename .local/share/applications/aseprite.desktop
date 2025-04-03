@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Aseprite
+Comment=Sprite Editor for Pixel Art
+Exec=/home/wayne/.local/bin/aseprite/aseprite %f
+Icon=/home/wayne/.local/bin/aseprite/icon.png
+Terminal=false
+Type=Application
+Categories=Graphics;GraphicsEditor;
+MimeType=image/png;image/jpeg;image/x-png;image/x-aseprite;
+StartupWMClass=Aseprite
