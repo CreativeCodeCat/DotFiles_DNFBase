@@ -9,7 +9,7 @@ set -gx LC_ALL "en_GB.UTF-8"
 set -gx ANDROID_HOME /home/wayne/Android/Sdk
 set -gx PAGER more
 set -gx AUR_PAGER more
-set -gx EDITOR vim
+set -gx EDITOR nvim
 #QT and GTK Variables
 set -gx QT_QPA_PLATFORMTHEME qt5ct
 set -gx QT_AUTO_SCREEN_SCALE_FACTOR 0
